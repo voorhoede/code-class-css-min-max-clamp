@@ -1,0 +1,51 @@
+{% extends "views/_base/base.html" %}
+
+{% block navigation %}
+	<nav class="cc-navigation">
+		<a href="/exercise-2/" class="cc-back-link">&#8592; back to exercise</a>
+	</nav>
+{% endblock %}
+
+{% block introduction %}
+	<h1><code>max()</code></h1>
+	<p>Think of the <code>max()</code> value as providing the minimum value a property can have.</p>
+{% endblock %}
+
+{% block html %}
+	<section class="cc-html-playground wrapper">
+		<div class="max-container">
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+		</div>
+		<div class="max-container">
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+		</div>
+		<div class="max-container">
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+		</div>
+	</section>
+{% endblock %}
+
+{% block styles %}
+	<style type="text/css">
+		.wrapper,
+		.wrapper * {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.max-container {
+			border: 2px dashed #ffe400;
+		}
+
+		.max-container + .max-container {
+			margin-top: max(5vh, 10px);
+		}
+	</style>
+{% endblock %}
+
+{% block scripts %}
+	<script type="text/javascript">
+
+	</script>
+{% endblock %}

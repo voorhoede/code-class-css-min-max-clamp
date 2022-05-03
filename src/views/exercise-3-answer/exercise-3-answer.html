@@ -1,0 +1,41 @@
+{% extends "views/_base/base.html" %}
+
+{% block navigation %}
+	<nav class="cc-navigation">
+		<a href="/exercise-3/" class="cc-back-link">&#8592; back to exercise</a>
+	</nav>
+{% endblock %}
+
+{% block introduction %}
+	<h1><code>clamp()</code></h1>
+	<p><code>clamp()</code> takes three parameters: a minimum value, a preferred value, and a maximum allowed value.</p>
+{% endblock %}
+
+{% block html %}
+	<section class="cc-html-playground wrapper">
+		<h2 class="title">
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+		</h2>
+	</section>
+{% endblock %}
+
+{% block styles %}
+	<style type="text/css">
+		.wrapper,
+		.wrapper * {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.title {
+			font-size: clamp(22px, 6vw, 70px);
+		}
+	</style>
+{% endblock %}
+
+{% block scripts %}
+	<script type="text/javascript">
+
+	</script>
+{% endblock %}

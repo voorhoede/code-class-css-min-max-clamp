@@ -1,0 +1,46 @@
+{% extends "views/_base/base.html" %}
+
+{% block navigation %}
+	<nav class="cc-navigation">
+		<a href="/exercise-1/" class="cc-back-link">&#8592; back to exercise</a>
+	</nav>
+{% endblock %}
+
+{% block introduction %}
+	<h1><code>min()</code></h1>
+	<p>Think of the <code>min()</code> value as providing the maximum value a property can have.</p>
+{% endblock %}
+
+{% block html %}
+	<section class="cc-html-playground">
+		<div class="wrapper">
+			<p class="min-container">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. </p>
+		</div>
+	</section>
+{% endblock %}
+
+{% block styles %}
+	<style type="text/css">
+		.wrapper,
+		.wrapper * {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.wrapper {
+			border: 2px dashed #ffe400;
+		}
+
+		.min-container {
+			width: min(80ch, 100% - 40px);
+			margin-inline: auto;
+		}
+	</style>
+{% endblock %}
+
+{% block scripts %}
+	<script type="text/javascript">
+
+	</script>
+{% endblock %}

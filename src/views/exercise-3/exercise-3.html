@@ -1,0 +1,55 @@
+{% extends "views/_base/base.html" %}
+
+{% block navigation %}
+	<nav class="cc-navigation">
+		<a href="/" class="cc-back-link">&#8592; back to overview</a>
+		<a href="/exercise-3-answer/" class="cc-answer-link">See answer &#8594;</a>
+	</nav>
+{% endblock %}
+
+{% block introduction %}
+	<h1><code>clamp()</code></h1>
+	<p><code>clamp()</code> takes three parameters: a minimum value, a preferred value, and a maximum allowed value.</p>
+{% endblock %}
+
+{% block html %}
+	<section class="cc-html-playground wrapper">
+		<h2 class="title">
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+		</h2>
+	</section>
+{% endblock %}
+
+{% block styles %}
+	<style type="text/css">
+		.wrapper,
+		.wrapper * {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		/* Todo: refactor the following lines to a onliner using clamp() */
+		.title {
+			font-size: 22px;
+		}
+
+		@media screen and (min-width: 400px) {
+			.title {
+				font-size: 6vw;
+			}
+		}
+
+		@media screen and (min-width: 1200px) {
+			.title {
+				font-size: 70px;
+			}
+		}
+	</style>
+{% endblock %}
+
+{% block scripts %}
+	<script type="text/javascript">
+
+	</script>
+{% endblock %}
